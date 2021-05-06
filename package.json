@@ -1,0 +1,23 @@
+{
+  "name": "github-to-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pillupriya/github-to-lambda.git"
+  },
+  "dependencies": {
+    "timezone": "^1.0.23",
+    "uuidv4": "^6.2.7"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pillupriya/github-to-lambda/issues"
+  },
+  "homepage": "https://github.com/pillupriya/github-to-lambda#readme"
+}
