@@ -11,9 +11,6 @@ phases:
     commands:
       - mkdir build-output
       - cp -R index.js node_modules/ build-output
-      - echo "Updating lambda Function..."
-      - aws lambda update-function-code --function-name github-to-lambda --zip-file fileb://build-output.zip
-      - echo "DONE!!"
 artifacts:
   files:
     - build-output.zip
