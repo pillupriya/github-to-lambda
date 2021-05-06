@@ -10,7 +10,7 @@ phases:
   post_build:
     commands:
       - mkdir build-output
-      - cp -R index.js node_modules/ build-output
+      - cp -R folder/index.js node_modules/ build-output
 artifacts:
   files:
-    - build-output.zip
+    - build-output/**/*
