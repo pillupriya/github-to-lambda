@@ -3,17 +3,14 @@ phases:
   install:
     runtime-versions:
       nodejs: 12
+  build:
     commands:
       - echo Build started on `date`
       - npm install
-  build:
-    commands:
-      - echo "Zipping deployment package..."
-      - mkdir build-output
-      - cp index.js node_modules/ build-output
-      - zip -r temp.zip build-output
   post_build:
     commands:
-      - echo "Updating lambda Function..."
-      - aws lambda update-function-code --function-name github-to-lambda unzip fileb://temp.zip
-      - echo "DONE!!"
+      - pwd
+      - ls -al
+artifacts:
+  files:
+    - '**/*'
